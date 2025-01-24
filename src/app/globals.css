@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../public/fonts/Satoshi-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../public/fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../public/fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../public//fonts//Satoshi-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../public//fonts/Satoshi-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --primaryBackground: #caffe5;
+  --secondaryBackground: #f4f6f7;
+  --tertiaryBackground: #39f2ae33;
+  --linearBackground: linear-gradient(
+    258.83deg,
+    #e9fff5,
+    #e5fff3,
+    #e0fff1,
+    #dcffee,
+    #d7ffec,
+    #d3ffea,
+    #ceffe7,
+    #caffe5
+  );
+  --primaryText: #20262c;
+  --secondaryText: #3b454f;
+  --tertiaryText: #4c5f6e;
+  --linearCardBg: linear-gradient(
+    180deg,
+    rgba(226, 232, 235, 0.2) -8.82%,
+    #e2e8eb 52.94%
+  );
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+h1 {
+  font-size: 57px;
+  line-height: 64px;
+  letter-spacing: -0.25px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 45px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+}
+
+.weight900 {
+  font-weight: 900;
+}
+
+.weight700 {
+  font-weight: 700;
+}
+
+.weight500 {
+  font-weight: 500;
+}
+
+.weight400 {
+  font-weight: 400;
+}
+
+.weight300 {
+  font-weight: 300;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
+.linearBg {
+  background: var(--linearBackground);
+}
+
+.linearCardBg {
+  background: var(--linearCardBg);
+}
+
+.container-wrapper {
+  max-width: 1440px;
+}
+
+.container-fluid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-crypto-card-shadow {
+  box-shadow: 4px 8px 12px 0px #0000001a;
+}
+
+.blog-card-shadow {
+  box-shadow: 2px 4px 12px 0px #26323829;
+}
+
+.hidden-scroll {
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hidden-scroll::-webkit-scrollbar {
+  display: none;
+}
