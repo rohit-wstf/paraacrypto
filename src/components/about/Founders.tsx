@@ -26,7 +26,7 @@ const Founders = () => {
             <div className="container-wrapper px-3 py-9 md:p-[60px] mx-auto flex flex-col gap-6 md:gap-12">
                 <div className="flex gap-3 flex-col">
                     <h2 className="text-[28px] sm:text-[45px] font-bold leading-[52px] text-primaryText">
-                    Our Founders
+                        Our Founders
                     </h2>
                     <h5 className="text-sm sm:text-[22px] font-normal md:leading-7 text-secondaryText">Meet the visionary behind Paraacrypto, whose passion for crypto sparked a revolution!</h5>
                 </div>
@@ -46,7 +46,7 @@ const Cards = () => {
             {
                 foundersDetails.map((card, index) => {
                     return (
-                        <div className="  flex items-end linearCardBg rounded-lg h-[340px]  md:h-full   gap-3 px-3 py-6 md:py-7 md:px-5" key={index}>
+                        <div className="  flex items-end founderCardBg rounded-lg h-[340px]  md:h-full   gap-3 px-3 py-6 md:py-7 md:px-5" key={index}>
                             <div className="flex flex-col  justify-end h-[128px] gap-2 ">
                                 <div className="flex items-center gap-2">
                                     <h3 className="text-[22px] sm:text-[32px] font-medium sm:leading-10 text-primaryText">{card.name}</h3>

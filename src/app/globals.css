@@ -69,6 +69,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-size: 57px;
   line-height: 64px;
@@ -143,6 +147,10 @@ body {
 }
 
 .linearCardBg {
+  background: linear-gradient(180deg, #e9fff5 0%, #99ffd1 100%);
+}
+
+.founderCardBg {
   background: var(--linearCardBg);
 }
 

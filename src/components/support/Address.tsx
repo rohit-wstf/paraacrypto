@@ -1,5 +1,5 @@
 import Image from "next/image";
-import contactUs from "../../../public/assets/images/contactUs.png";
+import contactUs from "../../../public/assets/images/contactUs.svg";
 
 const Address = () => {
     return (

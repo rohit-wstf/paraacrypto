@@ -1,19 +1,26 @@
 import Image from "next/image";
-import creditCard from "../../../public/creditcard.png";
+import lowTredingFees from "../../../public/about-page/Low Trading Fees.svg";
+import memberShipTiers from "../../../public/about-page/Membership_Tiers.svg";
+import educationalResources from "../../../public/about-page/Educational Resources.svg";
+import globalExpansionPlans from "../../../public/about-page/Global Expansion.svg";
 
 const uspItems = [
     {
+        image: lowTredingFees,
         title: "Low Trading Fees",
         content: "Transparent fee structures designed to maximise user profits."
     }, {
+        image: memberShipTiers,
         title: "Membership Tiers",
         content: "Unlock advanced features, faster transactions, and in-depth analytics tools to elevate your trading experience."
-    }
-    , {
+    },
+    {
+        image: educationalResources,
         title: "Educational Resources",
         content: "Learn and grow with tutorials, webinars, and market insights tailored for all skill levels."
     },
     {
+        image: globalExpansionPlans,
         title: "Global Expansion Plans",
         content: "Access ParaaCrypto CEX worldwide with multilingual support and localized payment options."
     }
@@ -45,14 +52,12 @@ const Cards = () => {
                         return (
                             <div className="min-w-[296px] max-w-[330px] lg:flex-1 flex-none flex flex-col gap-5" key={index}>
                                 <div className="w-full">
-                                    <div className="bg-[#F7F8F8] md:p-3 w-fit md:h-[85px] md:w-[85px]">
-                                        <Image src={creditCard} alt="" className="h-[40px] md:h-[60px] w-[40px] md:w-[60px]"></Image>
-                                    </div>
+                                    <Image src={item.image} alt="" className="md:h-[85px] md:w-[85px] h-[40px] w-[40px]"></Image>
                                 </div>
 
                                 <div className="gap-2">
-                                <h4 className="text-[22px] md:text-[28px] font-medium sm:font-bold leading-9 text-nowrp">{item.title}</h4>
-                                <h6 className="text-sm md:text-[16px] font-normal leading-6 tracking-[0.15px]">{item.content}</h6>
+                                    <h4 className="text-[22px] md:text-[28px] font-medium sm:font-bold leading-9 text-nowrp">{item.title}</h4>
+                                    <h6 className="text-sm md:text-[16px] font-normal leading-6 tracking-[0.15px]">{item.content}</h6>
                                 </div>
                             </div>
                         )

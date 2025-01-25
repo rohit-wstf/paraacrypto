@@ -1,10 +1,10 @@
-
-
+import Image from "next/image";
+import heroAnimation from "../../../public/assets/images/heroAnimation.gif";
 const Hero = () => {
     return (
-        <section className="w-full">
+        <section className="w-full h-full flex items-center">
             <div className="container-wrapper mx-auto md:px-[60px] px-3 flex items-center py-9" >
-                <div className="w-[597px] h-full md:mb-[64px] mb-0 flex flex-col gap-8 justify-between items-center md:items-start">
+                <div className="flex-1 h-full flex flex-col gap-8 justify-between items-center md:items-start">
                     <div className="flex gap-4 flex-col md:items-start items-center">
                         <h1 className="text-primaryText md:text-start text-center md:text-[57px] text-[45px] md:leading-[64px] -tracking-[0.25px]">
                             Empowering Your Crypto Journey with Paraacrypto
@@ -21,6 +21,9 @@ const Hero = () => {
                             Start Trading
                         </button>
                     </div>
+                </div>
+                <div className="flex-1 md:flex hidden">
+                    <Image src={heroAnimation} alt=""></Image>
                 </div>
             </div>
         </section>
