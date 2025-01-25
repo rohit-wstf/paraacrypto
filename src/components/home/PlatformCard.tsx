@@ -27,15 +27,15 @@ const PlatformCard = () => {
 
     return (
         <section className="w-full">
-            <div className="container-wrapper px-[60px] py-16 mx-auto">
-                <div className="flex justify-between items-center">
-                    <div className="flex flex-col w-[427px] gap-12 ">
-                        <h2 className="text-primaryText text-[45px] leading-[52px]">
+            <div className="container-wrapper md:px-[60px] px-3 md:py-16 py-9 mx-auto">
+                <div className="flex justify-between flex-col md:flex-row items-center md:gap-0 gap-8">
+                    <div className="flex flex-col md:w-[427px] w-full gap-12 ">
+                        <h2 className="text-primaryText md:text-[45px] md:leading-[52px] text-[28px] leading-9 weight700">
                             One platform,
                             <br />
                             endless possibilities
                         </h2>
-                        <div className="flex flex-col gap-5 text-[22px] leading-[28px] text-primaryText">
+                        <div className="flex flex-col gap-5 md:text-[22px] md:leading-7 text-[16px] leading-6 text-primaryText">
                             {platformLinks.map((link, index) => (
                                 <Link
                                     key={index}
@@ -61,7 +61,7 @@ const PlatformCard = () => {
                         </div>
 
                     </div>
-                    <div className="h-[352px] w-[572px] p-[60px] rounded-2xl border-[1px]  border-black flex items-center justify-center">
+                    <div className="md:h-[352px] h-auto md:w-[572px] w-full p-[60px] rounded-2xl border-[1px]  border-black flex items-center justify-center">
                         <div className="flex items-center justify-center">
                             <Image src={unversityCrest} alt="" className="h-[90px] w-[90px]"></Image>
                         </div>

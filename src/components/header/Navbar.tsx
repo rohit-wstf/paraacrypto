@@ -68,7 +68,7 @@ export const Navbar = () => {
                         {
                             navItems.map((item, index) => {
                                 return (
-                                    <Link key={index} href={item.path}><h6 key={index} className="px-5 py-2 text-tertiaryText text-center ">{item.name}</h6></Link>
+                                    <Link key={index} href={item.path}><h6 key={index} className="px-5 py-2 text-tertiaryText text-center rounded-[4px] ">{item.name}</h6></Link>
                                 )
                             })
                         }

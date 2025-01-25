@@ -23,14 +23,14 @@ const foundersDetails = [
 const Founders = () => {
     return (
         <section className="w-full">
-            <div className="container-wrapper p-[60px] mx-auto flex flex-col gap-12">
+            <div className="container-wrapper px-3 py-9 md:p-[60px] mx-auto flex flex-col gap-6 md:gap-12">
                 <div className="flex gap-3 flex-col">
-                    <h2 className="text-[45px] leading-[52px] text-primaryText">
-                        Our Competitive Edge
+                    <h2 className="text-[28px] sm:text-[45px] font-bold leading-[52px] text-primaryText">
+                    Our Founders
                     </h2>
-                    <h5 className="text-[22px] leading-7 text-secondaryText">Meet the visionary behind Paraacrypto, whose passion for crypto sparked a revolution!</h5>
+                    <h5 className="text-sm sm:text-[22px] font-normal md:leading-7 text-secondaryText">Meet the visionary behind Paraacrypto, whose passion for crypto sparked a revolution!</h5>
                 </div>
-                <div className="flex gap-4 h-[409px]">
+                <div className="flex flex-col md:flex-row gap-4  md:h-[409px]">
                     <Cards />
                 </div>
             </div>
@@ -46,16 +46,16 @@ const Cards = () => {
             {
                 foundersDetails.map((card, index) => {
                     return (
-                        <div className="flex-[0.5] linearCardBg flex" key={index}>
-                            <div className="flex flex-col justify-end gap-3 py-7 px-5">
+                        <div className="  flex items-end linearCardBg rounded-lg h-[340px]  md:h-full   gap-3 px-3 py-6 md:py-7 md:px-5" key={index}>
+                            <div className="flex flex-col  justify-end h-[128px] gap-2 ">
                                 <div className="flex items-center gap-2">
-                                    <h3 className="text-[32px] leading-10 text-primaryText">{card.name}</h3>
+                                    <h3 className="text-[22px] sm:text-[32px] font-medium sm:leading-10 text-primaryText">{card.name}</h3>
                                     <Link href={card.socialLink}><Image src={linkedInIcon} alt="" className="h-[24x] w-[24px]"></Image></Link>
                                 </div>
-                                <h5 className="text-[22px] leading-7 text-secondaryText">
+                                <h5 className=" text-base sm:text-[22px] font-medium sm:leading-7 text-secondaryText">
                                     {card.designation}
                                 </h5>
-                                <h6 className="text-[16px] leading-6 tracking-[0.15px]">
+                                <h6 className="text-sm sm:text-[16px] font-normal sm:leading-6 tracking-[0.15px]">
                                     {card.description}
                                 </h6>
                             </div>

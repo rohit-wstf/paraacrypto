@@ -70,13 +70,13 @@ const cryptoList = [
 const TopCrypto = () => {
     return (
         <section className="w-full">
-            <div className="container-wrapper py-16 px-[60px] mx-auto flex flex-col gap-16">
+            <div className="container-wrapper md:py-16 py-9 md:px-[60px] px-3 mx-auto flex flex-col md:gap-16 gap-5">
                 <div className="flex items-center justify-between">
-                    <h2 className="text-[45px] leading-[52px] text-primaryText">
+                    <h2 className="text-primaryText md:text-[45px] md:leading-[52px] text-[28px] leading-9 weight700">
                         Top Crypto Today
                     </h2>
                     <Link href="/">
-                        <div className="flex items-center gap-2">
+                        <div className="hidden md:flex items-center gap-2">
                             <h6 className="text-[16px] leading-6 tracking-[0.15px]">
                                 View all Assets
                             </h6>
@@ -84,10 +84,16 @@ const TopCrypto = () => {
                         </div>
                     </Link>
                 </div>
-                <div className="h-[87px] hidden-scroll px-2">
-                    <div className="flex gap-9">
+                <div className="md:h-[87px] h-[381px] hidden-scroll px-2">
+                    <div className="flex md:flex-row flex-col md:justify-normal items-center gap-9">
                         <Cards />
                     </div>
+                </div>
+                <div className="flex items-center gap-2">
+                    <h6 className="md:leading-6 leading-5 tracking-[0.15px] md:text-[16px] text-secondaryText weight400 md:weight500 text-[14px]">
+                        View all Assets
+                    </h6>
+                    <Image src={rightArrow} alt="" className="h-[16px] w-[16px]"></Image>
                 </div>
             </div>
         </section>

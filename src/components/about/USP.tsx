@@ -22,8 +22,8 @@ const uspItems = [
 const USP = () => {
     return (
         <section className="w-full">
-            <div className="container-wrapper p-[60px] mx-auto flex flex-col gap-12">
-                <h2 className="text-[45px] leading-[52px] text-primaryText">
+            <div className="container-wrapper px-3 py-9 md:p-[60px] mx-auto flex flex-col gap-6 md:gap-12">
+                <h2 className="text-[28px] sm:text-[45px] font-bold leading-[52px] text-primaryText">
                     Our Competitive Edge
                 </h2>
                 <div>
@@ -39,18 +39,21 @@ export default USP;
 const Cards = () => {
     return (
         <>
-            <div className="flex gap-[34px]">
+            <div className="flex gap-5 md:gap-[34px] flex-wrap">
                 {
                     uspItems.map((item, index) => {
                         return (
-                            <div className="min-w-[296px] max-w-[330px] flex flex-col gap-5" key={index}>
+                            <div className="min-w-[296px] max-w-[330px] lg:flex-1 flex-none flex flex-col gap-5" key={index}>
                                 <div className="w-full">
-                                    <div className="bg-[#F7F8F8] p-3 h-[85px] w-[85px]">
-                                        <Image src={creditCard} alt="" className="h-[60px] w-[60px]"></Image>
+                                    <div className="bg-[#F7F8F8] md:p-3 w-fit md:h-[85px] md:w-[85px]">
+                                        <Image src={creditCard} alt="" className="h-[40px] md:h-[60px] w-[40px] md:w-[60px]"></Image>
                                     </div>
                                 </div>
-                                <h4 className="text-[28px] leading-9 text-nowrap">{item.title}</h4>
-                                <h6 className="text-[16px] leading-6 tracking-[0.15px]">{item.content}</h6>
+
+                                <div className="gap-2">
+                                <h4 className="text-[22px] md:text-[28px] font-medium sm:font-bold leading-9 text-nowrp">{item.title}</h4>
+                                <h6 className="text-sm md:text-[16px] font-normal leading-6 tracking-[0.15px]">{item.content}</h6>
+                                </div>
                             </div>
                         )
                     })

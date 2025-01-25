@@ -49,9 +49,9 @@ const Faqs = () => {
 
     return (
         <section className="w-full">
-            <div className="container-wrapper mx-auto px-[60px] py-16 flex flex-col gap-16 items-center">
-                <div className="flex flex-col gap-9">
-                    <h2 className="text-[45px] leading-[52px] text-primaryText text-center">
+            <div className="container-wrapper mx-auto md:px-[60px] px-3 md:py-16 py-9 flex flex-col md:gap-16 gap-5 items-center">
+                <div className="flex flex-col md:gap-9 gap-5">
+                    <h2 className="text-primaryText md:text-[45px] md:leading-[52px] text-[28px] leading-9 weight700">
                         Have questions? We&apos;ve got answers!
                     </h2>
                     {/* Uncomment this section to enable FAQ buttons */}
@@ -74,7 +74,7 @@ const Faqs = () => {
                         })}
                     </div>*/}
                 </div>
-                <div className="w-[960px]">
+                <div className="lg:w-[960px] w-full">
                     <Accordion items={faqItems} />
                 </div>
             </div>
@@ -100,13 +100,13 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
                         className="w-full text-left py-4 text-lg font-medium flex justify-between items-center focus:outline-none"
 
                     >
-                        <h4 className="text-[28px] leading-6 text-primaryText">{item.title}</h4>
-                        <span className="text-xl">
+                        <h4 className="md:text-[28px] flex-[1] text-[16px] md:leading-9 leading-7 weight500 md:weight500 text-primaryText">{item.title}</h4>
+                        <span className="text-xl flex-[0.1]">
                             <Image src={openIndex === index ? upArrow : downArrow} alt="" onClick={() => toggleAccordion(index)} className="cursor-pointer"></Image>
                         </span>
                     </div>
                     {openIndex === index && (
-                        <h6 className="mt-2 text-[16px] leading-6 tracking-[0.15px] text-secondaryText">
+                        <h6 className="mt-2 md:leading-6 leading-5 tracking-[0.15px] md:text-[16px] text-secondaryText weight400 md:weight500 text-[14px]">
                             {item.content}
                         </h6>
                     )}

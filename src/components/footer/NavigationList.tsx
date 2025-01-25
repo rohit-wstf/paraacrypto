@@ -4,9 +4,9 @@ import { company, navlinks, products, support } from '@/utils/footerLinks';
 const NavigationList = () => {
     return (
         <>
-            <div className="flex  gap-9 flex-wrap text-start  ">
+            <div className="flex justify-start  gap-9 flex-wrap text-start  ">
                 {navlinks.map((link, index) => (
-                    <div className="min-w-[109px] max-w-[210px] w-[131px] sm:w-[203px]" key={index}>
+                    <div className="md:min-w-[109px] md:max-w-[210px] w-[120px] sm:w-[203px]" key={index}>
                         <h5 className="font-medium  text-base sm:text-[22px]  text-primaryText  mb-2">
                             {link === company
                                 ? "Company"

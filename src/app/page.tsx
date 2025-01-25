@@ -14,7 +14,7 @@ const page = () => {
   return (
     <>
       <div className="items-center justify-center">
-        <div className="linearBg h-[648px] flex flex-col justify-between">
+        <div className="linearBg md:h-[648px] h-auto flex flex-col md:justify-between justify-normal">
           <Navbar />
           <Hero />
         </div>

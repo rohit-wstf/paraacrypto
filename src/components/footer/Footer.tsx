@@ -9,7 +9,7 @@ import WebsiteRights from "./WebsiteRights";
 const Footer: React.FC = () => {
   return (
     <footer className="w-full">
-      <section className="container-wrapper bg-[#FFFFFF] flex flex-col gap-10 py-9 px-3  sm:py-16 sm:px-[60px] lg:px-20 mx-auto">
+      <section className="container-wrapper bg-[#FFFFFF] flex flex-col gap-8 md:gap-10 py-9 px-3  sm:py-16 sm:px-[60px] lg:px-20 mx-auto">
         <NavigationList />
         <hr className="my-6 border-[#E2E2E2]" />
         <div className="flex flex-col gap-4 md:flex-row items-center justify-between ">

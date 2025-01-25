@@ -23,8 +23,8 @@ const servicesList = [
 const ServiceCards = () => {
     return (
         <section className="w-full">
-            <div className='container-wrapper px-[60px] flex py-16 mx-auto'>
-                <div className='flex flex-wrap gap-10'>
+            <div className='container-wrapper md:px-[60px] px-3 flex md:py-16 py-9 mx-auto'>
+                <div className='flex flex-wrap md:gap-10 gap-6'>
                     <Cards />
                 </div>
             </div>
@@ -41,20 +41,20 @@ const Cards = () => {
             {
                 servicesList.map((item, index) => {
                     return (
-                        <div className='w-[630px]' key={index}>
+                        <div className='md:w-[630px] w-full  flex flex-col gap-5' key={index}>
                             <div className="w-full">
-                                <div className="h-[85px] w-[85px]">
-                                    <div className="h-[60px] w-[60px]">
-                                        <Image src={creditCardImg} alt="" className="h-[45px] w-[60px]"></Image>
+                                <div className="md:h-[85px] md:w-[85px] h-[40px] w-[40px] flex items-center justify-center">
+                                    <div className="md:p-3 py-2">
+                                        <Image src={creditCardImg} alt="" className="object-contain"></Image>
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col gap-2">
-                                <h4 className="text-[28px] leading-[36px]">
+                            <div className="flex flex-col gap-2 w-[95%]">
+                                <h4 className="md:text-[24px] text-[22px] leading-7 md:leading-9 tracking-[0.15px] weight500 md:weight700">
                                     {item.title}
                                 </h4>
-                                <div className="w-[555px]">
-                                    <h6 className="text-[16px] leading-[24px] tracking-[0.15px]">
+                                <div className="md:w-[555px] w-full">
+                                    <h6 className="weight400 md:weight500 md:text-[16px] md:leading-6 md:tracking-[0.15px] text-[14px] leading-5 tracking-[0.25px] ">
                                         {item.description}
                                     </h6>
                                 </div>
