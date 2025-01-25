@@ -1,5 +1,4 @@
 import Image from "next/image";
-import creditCardImg from "../../../public/creditcard.png";
 import inrDeposits from "../../../public/home/INR Deposits.svg";
 import supportImg from "../../../public/home/24x7 Support.svg";
 import fiuCompliance from "../../../public/home/FIU Compliance.svg";
