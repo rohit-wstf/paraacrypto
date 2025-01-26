@@ -2,9 +2,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
-import unversityCrest from "../../../public/university crest.png";
 import rightArrow from "../../../public/assets/icons/east.svg";
-
+import buysell from "../../../public/home/buysell.svg";
 
 const platformLinks = [
     {
@@ -61,10 +60,8 @@ const PlatformCard = () => {
                         </div>
 
                     </div>
-                    <div className="md:h-[352px] h-auto md:w-[572px] w-full p-[60px] rounded-2xl border-[1px]  border-black flex items-center justify-center">
-                        <div className="flex items-center justify-center">
-                            <Image src={unversityCrest} alt="" className="h-[90px] w-[90px]"></Image>
-                        </div>
+                    <div className="md:h-[352px] h-auto md:w-[572px] w-full flex items-center justify-center">
+                        <Image src={buysell} alt="" className="h-full w-full object-contain"></Image>
                     </div>
                 </div>
             </div>
