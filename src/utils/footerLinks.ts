@@ -21,7 +21,7 @@ export const products = [
 export const support = [
   { item: "24/7 Chat Support", link: "/" },
   { item: "Support Centre", link: "/" },
-  { item: "Terms of Use", link: "/" },
+  // { item: "Terms of Use", link: "/" },
 ];
 
 export const policies = [
