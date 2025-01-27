@@ -29,6 +29,20 @@ export const policies = [
   { item: "KYC", link: "https://ik.imagekit.io/1zjgwlmb7/paraacrypto/KYC%20Policy%20-ParaaCrypto.pdf?updatedAt=1737719274224" },
   { item: "Terms of Use", link: "https://ik.imagekit.io/1zjgwlmb7/paraacrypto/Terms%20of%20Use%20-%20ParaaCrypto.pdf?updatedAt=1737719274233" },
   { item: "Privacy Policy", link: "https://ik.imagekit.io/1zjgwlmb7/paraacrypto/Privacy%20policy-ParaaCrypto.pdf?updatedAt=1737719273680" },
+  {
+    item: "Custody Note", link: "https://ik.imagekit.io/1zjgwlmb7/paraacrypto/Custody%20Note-%20ParaaCrypto.pdf?updatedAt=1737995216161"
+  }
+  ,
+  {
+    item: "Advertisement Policy", link: "https://ik.imagekit.io/1zjgwlmb7/paraacrypto/Advertisement%20Policy%20-%20ParaaCrypto.pdf?updatedAt=1737995216132"
+  },
+  {
+    item: "Third Party Disclaimer", link: "https://ik.imagekit.io/1zjgwlmb7/paraacrypto/Third-Party%20Disclaimer%20for%20ParaaCrypto.pdf?updatedAt=1737995215994"
+  }
+  , {
+    item: "Unregulated Deposit Ordinance", link: "https://ik.imagekit.io/1zjgwlmb7/paraacrypto/Unregulated%20Deposit%20Ordinance%20Compliance%20Policy%20ParaaCrypto.pdf?updatedAt=1737995215974"
+  },
+  { item: "Risk Disclosure Note", link: "https://ik.imagekit.io/1zjgwlmb7/paraacrypto/Risk%20Disclosure%20Note-%20%20ParaaCrypto.pdf?updatedAt=1737995215844" },
 ]
 
 export const navlinks = [company, products, support, policies];
